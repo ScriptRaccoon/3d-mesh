@@ -14,5 +14,6 @@ type mesh = polygon3d[];
 type camera = {
 	pos: point3d;
 	zoom: number;
+	rotation: point2d;
 	project: (_: point3d) => point2d;
 };

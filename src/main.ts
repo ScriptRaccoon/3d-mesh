@@ -5,13 +5,12 @@ import { meshes } from "./meshes";
 
 make_canvas_fullscreen();
 
-// TODO: camera rotation along y-axis
-
-function loop(time: number) {
+function loop() {
 	clear_canvas();
-	camera.pos.x = Math.cos(time / 1000) * 2;
+	camera.rotation.x += 0.005;
+	camera.rotation.y += 0.01;
 	draw_meshes(meshes, camera);
 	requestAnimationFrame(loop);
 }
 
-loop(0);
+loop();
