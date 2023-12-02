@@ -31,23 +31,4 @@ const cube: mesh = [
 	],
 ]
 
-export const pyramid: mesh = [
-	[
-		{ x: -1.5, y: -1, z: -1.5 },
-		{ x: -1.5, y: -1, z: 1.5 },
-		{ x: 1.5, y: -1, z: 1.5 },
-		{ x: 1.5, y: -1, z: -1.5 },
-	],
-	[
-		{ x: -1.5, y: -1, z: -1.5 },
-		{ x: 0, y: -3, z: 0 },
-		{ x: 1.5, y: -1, z: -1.5 },
-	],
-	[
-		{ x: -1.5, y: -1, z: 1.5 },
-		{ x: 0, y: -3, z: 0 },
-		{ x: 1.5, y: -1, z: 1.5 },
-	],
-]
-
-export const meshes = [cube, pyramid]
+export const meshes = [cube]
