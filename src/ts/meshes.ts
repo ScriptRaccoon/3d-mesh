@@ -1,3 +1,5 @@
+import type { mesh } from "./mesh"
+
 const cube: mesh = [
 	[
 		{ x: -1, y: -1, z: -1 },
@@ -27,9 +29,9 @@ const cube: mesh = [
 		{ x: -1, y: 1, z: -1 },
 		{ x: -1, y: 1, z: 1 },
 	],
-];
+]
 
-const pyramid: mesh = [
+export const pyramid: mesh = [
 	[
 		{ x: -1.5, y: -1, z: -1.5 },
 		{ x: -1.5, y: -1, z: 1.5 },
@@ -46,6 +48,6 @@ const pyramid: mesh = [
 		{ x: 0, y: -3, z: 0 },
 		{ x: 1.5, y: -1, z: 1.5 },
 	],
-];
+]
 
-export const meshes: mesh[] = [cube, pyramid];
+export const meshes = [cube, pyramid]
