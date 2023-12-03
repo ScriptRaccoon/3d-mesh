@@ -13,7 +13,7 @@ interface camera_interface {
 }
 
 export const camera: camera_interface = {
-	distance: 10,
+	distance: 5,
 	rotation: { x: 0, y: 0 },
 	zoom: 1000,
 	project(point: point3d): point2d {

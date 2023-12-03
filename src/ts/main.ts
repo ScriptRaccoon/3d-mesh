@@ -8,7 +8,7 @@ make_canvas_fullscreen()
 function loop() {
 	clear_canvas()
 	camera.rotation.x += 0.005
-	camera.rotation.y += 0.01
+	camera.rotation.y += 0.007
 	for (const mesh of meshes) {
 		draw_mesh(mesh)
 	}
